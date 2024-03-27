@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nicosquiroz.github.io",
+  "homepage": "https://nicosquiroz.github.io/madness",
   "name": "madness",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "echo 'nicosquiroz.github.io' > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
